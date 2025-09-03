@@ -1,0 +1,230 @@
+.tool-header-section {
+    background: white;
+    padding: 2rem 0;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  
+  .tool-header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .tool-date {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .calendar-icon {
+    font-size: 1rem;
+  }
+  
+  .tool-main-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .tool-icon-large {
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #FF00F5 0%, #3300FF 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .icon-letter {
+    color: white;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  
+  .tool-details {
+    flex: 1;
+  }
+  
+  .tool-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+  }
+  
+  .tool-badges {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .badge {
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .badge.featured {
+    background: #FFFF00;
+    color: #333;
+  }
+  
+  .badge.free {
+    background: #2FFF2F;
+    color: #333;
+  }
+  
+  .rating-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .stars {
+    display: flex;
+    gap: 0.1rem;
+  }
+  
+  .star {
+    font-size: 0.9rem;
+    filter: grayscale(100%) brightness(0.7);
+  }
+  
+  .star.filled {
+    filter: none;
+  }
+  
+  .rating-text {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 600;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .btn-primary {
+    background: #0099FF;
+    color: white;
+    border: 1px solid #000;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    padding: 1px 2.5rem;
+    height: 2.8rem;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+  }
+  
+  .btn-primary:hover {
+    background: #0056CC;
+    transform: translateY(-1px);
+  }
+  
+  .btn-secondary {
+    background: #FFFF80;
+    color: #333;
+    border: 1px solid #000;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    padding: 1px 2.5rem;
+    height: 2.8rem;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+  }
+  .btn-secondary2 {
+    background: #A8FBFF;
+    color: #333;
+    border: 1px solid #000;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    padding: 1px 2.5rem;
+    height: 2.8rem;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+  }
+  .btn-secondary3 {
+    background: #D6CCFF;
+    color: #333;
+    border: 1px solid #000;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    padding: 1px 2.5rem;
+    height: 2.8rem;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+  }
+  
+  .btn-secondary:hover {
+    background: #E0E0E0;
+    transform: translateY(-1px);
+  }
+  
+  @media (max-width: 768px) {
+    .tool-header-container {
+      padding: 0 1rem;
+    }
+    
+    .tool-main-info {
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .tool-icon-large {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .icon-letter {
+      font-size: 2rem;
+    }
+    
+    .tool-title {
+      font-size: 1.5rem;
+    }
+    
+    .action-buttons {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tool-badges {
+      justify-content: center;
+    }
+    
+    .action-buttons {
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,32 @@
+.tool-details-main {
+    background: #F5F5F5;
+    min-height: 60vh;
+    padding: 2rem 0;
+  }
+  
+  .tool-details-container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  
+  @media (max-width: 1024px) {
+    .tool-details-container {
+      flex-direction: column-reverse;
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .tool-details-main {
+      padding: 1.5rem 0;
+    }
+    
+    .tool-details-container {
+      padding: 0 1rem;
+      gap: 1rem;
+    }
+  }

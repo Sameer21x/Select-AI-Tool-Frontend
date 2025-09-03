@@ -1,0 +1,178 @@
+/* Default card styling */
+.tool-card {
+  background: white;
+  border-radius: 5px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Yellow border for every 1st card in the 3-card sequence */
+.yellow-border {
+  border: 2.5px solid #E5AC00;
+  border-bottom: 5px solid #E5AC00;
+  border-right: 5px solid #E5AC00;
+}
+
+/* Black border for the next two cards */
+.black-border {
+  border: 2.5px solid #000;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+}
+
+.tool-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Header with logo, title and rating on same line */
+.tool-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.tool-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #FF00F5 0%, #3300FF 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.tool-title-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.tool-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.tool-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: auto;
+}
+
+.rating-star {
+  font-size: 0.9rem;
+  color: #FFD700;
+}
+
+.rating-number {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 600;
+}
+
+/* Tags section */
+.tool-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tool-tag {
+  background: #FFF;
+  color: #0066CC;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1.5px solid #000000;
+}
+
+/* Description */
+.tool-description {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+/* Footer with date and button */
+.tool-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.tool-date {
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: 500;
+}
+
+.visit-btn {
+  background: #007BFF;
+  color: white;
+  border: 1.5px 0 220px 0 solid black;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  padding: 0.6rem 1.2rem;
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.2);
+}
+
+.visit-btn:hover {
+  background: #0056CC;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .tool-card {
+    padding: 1.2rem;
+  }
+
+  .tool-header {
+    gap: 0.6rem;
+  }
+
+  .tool-logo {
+    width: 36px;
+    height: 36px;
+    font-size: 1.3rem;
+  }
+
+  .tool-name {
+    font-size: 1rem;
+  }
+
+  .tool-footer {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .visit-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

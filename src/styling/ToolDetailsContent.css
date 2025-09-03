@@ -1,0 +1,15 @@
+.tool-details-content {
+    flex: 1;
+  }
+  
+  .content-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .tool-details-content {
+      width: 100%;
+    }
+  }

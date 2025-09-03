@@ -1,0 +1,192 @@
+.sidebar {
+  width: 280px;
+  background: #f1f5f9; /* Light blue-gray background like Figma */
+  border-radius: 16px;
+  padding: 1.5rem;
+  height: fit-content;
+  position: sticky;
+  top: 120px;
+  border: none; /* Remove old border */
+  box-shadow: none; /* Remove old shadow */
+}
+
+.filter-section {
+  margin-bottom: 2rem;
+}
+
+.filter-section:last-child {
+  margin-bottom: 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  border-bottom: none; /* Remove the line */
+}
+
+.section-title {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 1rem;
+}
+
+.toggle-icon {
+  font-weight: 500;
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+/* New pill-style filter layout */
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-item {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide the default checkbox */
+.filter-item input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the filter buttons as pills */
+.filter-label {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px; /* Full rounded */
+  font-size: 0.875rem;
+  color: #374151;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.filter-label:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+}
+
+/* Selected state for filter buttons */
+.filter-item input[type="checkbox"]:checked + .filter-label {
+  background: #A8FBFF;
+  color: black;
+  border-color: black;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+}
+
+/* Special styling for ratings section */
+.rating-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.rating-item input[type="checkbox"] {
+  display: block;
+  width: 16px;
+  height: 16px;
+  accent-color: #2563eb;
+  margin: 0;
+}
+
+.rating-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stars {
+  display: flex;
+  gap: 0.1rem;
+}
+
+.star {
+  font-size: 0.875rem;
+  filter: grayscale(100%);
+}
+
+.star.filled {
+  filter: none;
+}
+
+.rating-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+.view-more-btn {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  text-align: left;
+  font-size: 0.875rem;
+  transition: color 0.3s;
+  margin-top: 0.5rem;
+}
+
+.view-more-btn:hover {
+  color: #1d4ed8;
+}
+
+/* Add filter icon styling if you want to add it */
+.filters-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filters-icon {
+  width: 16px;
+  height: 16px;
+  color: #6b7280;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 100%;
+    position: static;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    padding: 1rem;
+  }
+  
+  .section-title {
+    font-size: 0.9rem;
+  }
+  
+  .filter-label {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+  }
+  
+  .filter-list {
+    gap: 0.4rem;
+  }
+}

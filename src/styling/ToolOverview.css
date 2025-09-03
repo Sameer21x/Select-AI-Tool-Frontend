@@ -1,0 +1,67 @@
+.tool-overview-section {
+    background: white;
+    padding: 2rem 0;
+  }
+  
+  .tool-overview-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .overview-card {
+    border: 2px solid #333;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    border-radius: 12px;
+    padding: 2rem;
+    background: white;
+  }
+  
+  .overview-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 1.5rem 0;
+  }
+  
+  .overview-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .overview-content p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .tool-overview-container {
+      padding: 0 1rem;
+    }
+    
+    .overview-card {
+      padding: 1.5rem;
+    }
+    
+    .overview-title {
+      font-size: 1.3rem;
+    }
+    
+    .overview-content p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .overview-card {
+      padding: 1rem;
+    }
+    
+    .overview-title {
+      font-size: 1.2rem;
+    }
+  }

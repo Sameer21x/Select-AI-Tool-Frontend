@@ -1,0 +1,32 @@
+.main-content {
+    background: #F5F5F5;
+    min-height: 100vh;
+    padding: 2rem 0;
+  }
+  
+  .content-container {
+    /* max-width: 1800px; */
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  
+  @media (max-width: 1024px) {
+    .content-container {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 1.5rem 0;
+    }
+    
+    .content-container {
+      padding: 0 1rem;
+      gap: 1rem;
+    }
+  }

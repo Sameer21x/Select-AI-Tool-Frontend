@@ -1,0 +1,48 @@
+.breadcrumb {
+    background: #F5F5F5;
+    padding: 1rem 0;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  
+  .breadcrumb-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .breadcrumb-link {
+    color: #3300FF;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .breadcrumb-link:hover {
+    color: #2A00D4;
+  }
+  
+  .breadcrumb-separator {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .breadcrumb-current {
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    .breadcrumb-container {
+      padding: 0 1rem;
+    }
+    
+    .breadcrumb-link,
+    .breadcrumb-separator,
+    .breadcrumb-current {
+      font-size: 0.8rem;
+    }
+  }
