@@ -19,7 +19,7 @@ function App() {
         {/* Routing Setup */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/ToolDetails" element={<ToolDetails />} />
+          <Route path="/ToolDetails/:id" element={<ToolDetails />} />
           <Route path="/Terms&Conditions" element={<Terms />} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
           <Route path="/EbooksListing" element={<EbooksListing />} />

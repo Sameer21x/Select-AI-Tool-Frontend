@@ -46,15 +46,11 @@
     font-size: 2.5rem;
   }
   
-  .tool-details {
-    flex: 1;
-  }
-  
   .tool-title {
     font-size: 2rem;
     font-weight: 700;
     color: #333;
-    margin: 0 0 1rem 0;
+    margin: 0 0 1rem -20rem;
     line-height: 1.2;
   }
   
@@ -76,11 +72,17 @@
   .badge.featured {
     background: #FFFF00;
     color: #333;
+    border: 1.5px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
   }
   
   .badge.free {
     background: #2FFF2F;
     color: #333;
+    border: 1.5px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
   }
   
   .rating-section {
