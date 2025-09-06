@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from '../assets/icons/Logo.png';
 import '../styling/Header.css';
 
 const Header = () => {
@@ -14,17 +15,18 @@ const Header = () => {
             </div>
           </div>
         </div>
-        
+
         <nav className="header-nav">
-          <a href="#" className="nav-link active">AI Tools</a>
-          <a href="#" className="nav-link">Ebooks</a>
+          <a href="/" className="nav-link active">AI Tools</a>
+          <a href="/EbooksListing" className="nav-link">Ebooks</a>
           <div className="logo">
-            <div className="logo-icon"></div>
+            <img src={Logo} alt="Logo" />
           </div>
-          <a href="#" className="nav-link">Terms</a>
-          <a href="#" className="nav-link">Privacy Policy</a>
+
+          <a href="/Terms&Conditions" className="nav-link">Terms</a>
+          <a href="/PrivacyPolicy" className="nav-link">Privacy Policy</a>
         </nav>
-        
+
         <div className="header-right">
           <button className="email-btn">Email Us</button>
         </div>

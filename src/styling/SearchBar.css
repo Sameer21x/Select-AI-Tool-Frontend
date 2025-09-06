@@ -1,5 +1,5 @@
 .search-section {
-    background: linear-gradient(180deg, #3300FF 0%, #E5E5E5 50%);
+    background: #3375F5;
     padding: 2rem 0;
   }
   
@@ -17,6 +17,10 @@
     border-radius: 50px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    border: 1.5px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+
   }
   
   .search-icon {

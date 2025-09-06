@@ -1,5 +1,5 @@
 .header {
-    background: linear-gradient(135deg, #3300FF 0%, #2A00D4 100%);
+    background: #3375F5;
     color: white;
     padding: 1rem 0;
     position: sticky;
@@ -99,36 +99,18 @@
     justify-content: center;
   }
   
-  .logo-icon {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(45deg, #FFFF00, #FF4911, #2FFF2F, #FF00F5);
-    border-radius: 8px;
-    position: relative;
-  }
-  
-  .logo-icon::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background: white;
-    border-radius: 4px;
-  }
-  
   .header-right {
     display: flex;
     align-items: center;
   }
   
   .email-btn {
-    background: #FFFF00;
-    color: #2A00D4;
-    border: none;
-    padding: 0.5rem 1rem;
+    background: #FFFF2A;
+    color: #000;
+    border: 1.5px solid black;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    padding: 0.8rem 3rem;
     border-radius: 6px;
     font-weight: 600;
     cursor: pointer;

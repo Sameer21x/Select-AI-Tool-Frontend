@@ -1,0 +1,21 @@
+.ebooks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 24px;
+    flex: 1;
+  }
+  
+  /* For tablets */
+  @media (max-width: 1024px) {
+    .ebooks-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    }
+  }
+  
+  /* For mobiles */
+  @media (max-width: 768px) {
+    .ebooks-grid {
+      grid-template-columns: 1fr; /* 1 per row */
+    }
+  }
+  

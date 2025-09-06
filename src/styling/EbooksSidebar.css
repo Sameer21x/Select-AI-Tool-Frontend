@@ -1,0 +1,74 @@
+.ebooks-sidebar {
+    width: 280px;
+    padding: 0 20px;
+  }
+  
+  .filter-section {
+    margin-bottom: 32px;
+  }
+  
+  .filter-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 16px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-icon {
+    margin-right: 8px;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .genre-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .genre-btn {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    color: #495057;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+  
+  .genre-btn:hover {
+    background: #e9ecef;
+    border-color: #dee2e6;
+  }
+  
+  .genre-btn.active {
+    background: #A8FBFF;
+    color: black;
+    border-color: black;
+  }
+  
+  @media (max-width: 1024px) {
+    .ebooks-sidebar {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 24px;
+    }
+    
+    .filter-section {
+      margin-bottom: 20px;
+    }
+    
+    .genre-filters {
+      gap: 6px;
+    }
+    
+    .genre-btn {
+      padding: 6px 12px;
+      font-size: 13px;
+    }
+  }
