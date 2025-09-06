@@ -1,7 +1,8 @@
 .filter-buttons {
-  background: #E5E5E5;
+  background: #DDEFFD;
   padding: 2rem 0;
   text-align: center;
+  margin-top: -60px;
 }
 
 .filter-container {
